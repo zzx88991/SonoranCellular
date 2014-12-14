@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+     PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app> 
+    <!-- Define servlets that are included in the example application -->
+ 
+    <servlet>
+        <servlet-name>AddPlan</servlet-name>
+        <servlet-class>SonoranCellular.servlets.AddPlan</servlet-class>
+    </servlet>
+    <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>SonoranCellular.servlets.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddAccountInformation</servlet-name>
+		<servlet-class>SonoranCellular.servlets.AddAccountInformation</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>FindBill</servlet-name>
+		<servlet-class>SonoranCellular.servlets.FindBill</servlet-class>
+	</servlet>
+
+	<!--Map paths for servlets in the application-->
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddAccountInformation</servlet-name>
+		<url-pattern>/AddAccountInformation</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>FindBill</servlet-name>
+		<url-pattern>/FindBill</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPlan</servlet-name>
+        <url-pattern>/AddPlan</url-pattern>
+    </servlet-mapping> 
+   
+
+</web-app>
